@@ -19,6 +19,19 @@
   background-color: rgb(99, 97, 97);
 
   display: none;
+  transform-origin: 50% 0%;
+  animation: slide 1s ease-out;
+}
+@keyframes slide {
+  from {
+    transform: scaleY(0);
+  }
+  60% {
+    transform: scaleY(1.15);
+  }
+  100% {
+    transform: scaleY(1);
+  }
 }
 
 ul.dropdown-menu li:hover {
